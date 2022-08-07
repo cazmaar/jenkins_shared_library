@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy 
 def call(){
-    npm pack
+    echo "builidn app artifact"
+    sh "npm pack"
 }

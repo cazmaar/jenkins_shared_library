@@ -1,3 +1,4 @@
+#!/usr/bin/env groovy 
 def call(){
     withCredentials([usernamePassword(credentialsId: '94290158-e809-48d4-a7df-0d83c7b67fbc', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
         sh 'docker build -t cazmaars/jenkins:drinks-1.0 .'
